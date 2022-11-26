@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mountain {
+    background-image: url("../images/MountainScenery.webp");
+    background-size: contain;
+    background-color: lightblue;
+    background-blend-mode: color-burn;
+    height: 700px;
+    width: 100%;
+  }
+  
+  .mountain .mountain_diamond-box {
+    width: 40px;
+    height: 30px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1.3rem;
+    border-radius: 100%;
+  }
+  
+  .mountain .mountain_diamond-box .icon {
+    width: 40px;
+    height: 30px;
+    fill: #fff;
+  }
+  
+  .mountain .mountain_content {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 2.5rem;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  
+  .mountain .mountain_content .mountain_name {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  
+  .mountain .mountain_content .mountain_description {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  .mountain .flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  
+  .mountain .flexbox .flex {
+    border: 1px solid #fff;
+    color: #fff;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  /*# sourceMappingURL=style.css.map */

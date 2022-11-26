@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #4BD250;
+    border-radius: 3px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+    h2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    #circle{
+        background-image: url("../images/fortune.webp");
+        background-position: center;
+        background-size: cover;
+        border-radius: 100%;
+        height: 250px;
+        margin-bottom: 1rem;
+        margin: 0 auto;
+        overflow-wrap: break-word;
+        padding: 5rem;
+        width: 250px;    
+    }
+    p{
+        background-color: #fff;
+        margin-bottom: 1rem;
+        padding: .3rem;
+        text-align: center;
+    }
+    h3{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 600;
+        margin-bottom: .5rem;
+    }
+    .list-container{
+        list-style: none;
+        text-align: left;
+    }
+        .list-container .list-items button{
+            cursor: pointer;
+        }
+        .list-items{
+            margin-bottom: .5rem;
+            
+        }
+
+@media screen and (min-width: 768px) {
+    body{
+        padding: 2rem;
+    }
+    .container{
+        width: 60%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container{
+        width: 30%;
+    }
+}

@@ -1,0 +1,418 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-heading: #000;
+    --color-primary: #fff;
+    --color-greeny: #29ac36;
+}
+html, body{
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.navBox{
+    display: flex;
+    box-shadow: 1px 1px 2px gray;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #B30059;
+}
+
+/*--Header Logo----------*/
+.navLogo{
+    box-shadow: 1px 1px 4px gray;
+    text-align: center;
+    width: 120px;
+    
+}
+    .navLogoImage{
+        width: 70px;
+        height: 50px;
+    }
+    .navLogoDescription{
+        font-size: 1rem;
+        color: #00B300;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+    }
+    /*---Header Logo--------
+    -------End------------*/
+
+/*--Header Menu Icon---*/
+.icon{
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px gray;
+    cursor: pointer;
+    fill: #00B300;
+    height: 40px;
+    padding: .3rem;
+    width: 50px;
+}
+/*--Header Menu Icon----
+---------End----------*/
+
+/*--Header navigation links--*/
+.navLinks{
+    display: none;
+    list-style: none;
+    margin-top: 1rem;
+    width: 100%;
+}
+    .navLinks-items{
+        border-bottom: 2px solid #B30059;
+    }
+        .navLinks-items a{
+            color: #00B300;
+            font-size: 1.2rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 900;
+            text-decoration: none;
+            
+        }
+        /*--Header navigation Links---
+        ----------End----------------*/
+
+/*--Javascript Show the menu when click
+ the menu icon------------------------*/
+ .navLinks.drop{
+    display: block;
+ }
+ /*--Javascript Show the menu-----
+ ---------End------------------*/
+
+ /*--hero-container--*/
+.hero-container{
+    background-position: center;
+    box-shadow: 0 0 5px gray;
+    display: flex;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    width: 100%;
+}
+    .heroLeft{
+        background-image: url("../images/cindie-hansen-cvj-7TZjvA0-unsplash.webp");
+        padding: .5rem;
+        width: 100%;
+        height: 25.5rem;
+    }
+    .heroLeft p{
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        border-radius: 32px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        color: #000;
+        font-size: 30px;
+        font-weight: bolder;
+        margin-top: 4rem;
+        padding: 1rem 0rem;
+        text-align: center;
+    }
+    #reserveBtn{
+        background-color: #FF0080;
+        border-radius: 30px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 18px;
+        margin-top: 2rem;
+        padding: .8rem .5rem;
+        text-align: center;
+        width: 100%;
+        border: 0;
+    } 
+    #reserveBtn:hover{
+        background-color: #00B300;
+    }  
+.heroRight{
+    background-image: url("../IMAGES/cindie-hansen-cvj-7TZjvA0-unsplash.webp");
+    background-size: cover;
+    width: 100%;
+    display: none;
+} 
+/*--hero-container-------
+---------End------------*/
+
+ /*--content-container---*/
+ .content-container{
+    padding: 2rem;
+    box-shadow: 0px 0px 3px gray;
+    margin-bottom: 2rem;
+ }
+    .contentInfo-container{
+        box-shadow: 0px 0px 3px gray;
+        margin-bottom: 5rem;
+    }
+     .contentInfo-container img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px 5px 0px 0px;
+    }
+    .contentInfo-container h2{
+        color: var(--color-greeny);
+        font-weight: 900;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .contentDescription-container{
+        padding: .5rem .3rem;
+    }
+    .btn-container{
+        text-align: center;
+        margin-top: .5rem;
+    }
+        .buy-el{
+            background-color: #FF0080;
+            border-radius: 2rem;
+            border: 0;
+            color: #fff;
+            font-weight: 900;
+            padding: .8rem;
+            width: 150px;
+            cursor: pointer;
+        }
+        .buy-el:hover{
+            background-color: #00B300;
+        }
+    .saleOff{
+        display: none;
+    }
+    /*--content-container-----
+    ----------End------------*/
+
+/*--Farm Photos----*/
+.gallery{
+    
+}
+    .gallery-name{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 700;
+        text-align: center;
+        font-size: 30px;
+        text-shadow: 5px 3px rgb(196, 196, 196);
+        color: #00B300;
+    }
+    .gallery-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        background-color: #fff;
+        padding: 25px;
+    }
+    .grid-items{
+        max-width: 500px;
+        height: 200px;
+    }
+    .grid-items img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        border-radius: 3px;
+        box-shadow:  0 0 2px gray;
+    }
+    /*--Farm Photos-------
+    --------End---------*/
+
+/*--Video Container--*/
+.video-container{
+    margin-top: 5rem;
+}
+.video iframe{
+    width: 100%;
+    height: 25rem;
+}
+
+ /*---@media min-width: 768px---*/
+ @media screen and (min-width: 767px){
+    .navLinks{
+        display: flex;
+        width: auto;
+        margin: 0 auto;
+    }
+        .navLinks-items{
+            margin-right: 1rem;
+        }
+        .navLinks-items:hover{
+            border-color: #29ac36;
+        }
+    .icon{
+        display: none;
+    }
+    .content-container{
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+        justify-content: space-evenly;
+        position: relative;
+    }
+    .contentInfo-container{
+        width: 100%;
+        margin-right: 1.4rem;
+        box-shadow: 0px 0px 10px gray;
+    }
+    .noMarginRight{
+        margin-right: 0;
+    }
+    .contentInfo-container h2{
+        display: none;
+    }
+    .contentInfo-container img{
+        width: 100%;
+    }
+    .buy-el{
+        padding: .6rem;
+    }
+    .saleOff{
+        color: #29ac36;
+        position: absolute;
+        bottom: 5%;
+        font-size: 2rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 900;
+        letter-spacing: .5rem;
+        display: block;
+    }
+/*--hero-container--*/
+.hero-container{
+    width: 500px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 11rem;
+    margin-top: 3rem;
+    background-position: center;
+}
+    .heroLeft{
+        height: 15.3rem;
+        width: 100%;
+        padding: .2rem .5rem;
+        background-image: none;
+    }
+    .heroLeft p{
+        background-color: #fff;
+        border-radius: 0;
+        border: 0;
+        box-shadow: none;
+        color: #00B300;
+        font-size: 24px;
+        font-weight: bold;
+        left: 28px;
+        margin-top: 1.5rem;
+        padding: 1rem 0rem;
+        position: relative;
+        text-align: left;
+    }
+    #reserveBtn{
+        background-color: #FF0080;
+        color: #fff;
+        padding: .5rem;
+        margin-top: 1rem;
+    }   
+.heroRight{
+    background-image: url("../images/cindie-hansen-cvj-7TZjvA0-unsplash.webp");
+    background-size: cover;
+    width: 100%;
+    display: block;
+    border-radius: 0px 4px 4px 0px;
+} 
+/*--hero-container-------
+---------End------------*/
+
+/*--Farm Photos----*/
+.gallery{
+    margin-top: 10rem;
+    padding: 0rem 5rem;
+}
+    .gallery-name{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 900;
+        font-size: 30px;
+        margin-bottom: 1rem;
+        color: #00B300;
+    }
+    .gallery-grid{
+        grid-template-columns: auto auto auto auto;
+        gap: 15px;
+        box-shadow: 0 0 20px gray;
+    }
+    .grid-items{
+        height: 200px;
+    }
+    .grid-items img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        cursor: pointer;
+    }
+    /*--Farm Photos-------
+    --------End---------*/
+
+/*--Video container--*/
+.video-container{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    background-color: #000;
+}
+.video{
+    display: flex;
+    justify-content: center;
+}
+.video iframe{
+    width: 50rem;
+    height: 30rem;
+}
+ }
+
+ /*--@media min-width: 768px-----
+ ----------End------------------*/
+
+ /*--@media min-width: 1023px-----*/
+ @media screen and (min-width: 1023px) {
+    .navLinks{
+        margin-right: 2rem;
+    }
+    /*--content-container--*/
+    .content-container{
+        padding: 1.5rem 8rem;
+    }
+    .contentInfo-container{
+        margin-right: 5rem;
+    }
+    .noMarginRight{
+        margin-right: 0;
+    }
+
+/*--hero-container--*/
+    .hero-container{
+        width: 700px;
+        height: 300px;
+    }
+    .hero-container .heroLeft p{
+        left: 130px;
+        width: 250px;
+    }
+    #reserveBtn{
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+/*--hero-container-------
+---------End------------*/
+
+/*--Farm Photos--*/
+.gallery{
+    padding: 0rem 15rem;
+}
+.grid-items{
+    height: 200px;
+}
+/*--Farm Photos-----
+-------End---------*/
+ }
+ /*--@media min-width: 1023px-------
+ ----------End--------------------*/
